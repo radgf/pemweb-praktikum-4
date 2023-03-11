@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Ubah Warna</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#kotak1").dblclick(function() {
+                    $("#kotak1").css("background-color", "red");
+                })
+                $("#kotak2").dblclick(function() {
+                    $("#kotak2").css("background-color", "red");
+                })
+            
+                $("#kotak3").dblclick(function() {
+                    $("#kotak3").css("background-color", "red");
+                })
+            
+                $("#kotak4").dblclick(function() {
+                    $("#kotak4").css("background-color", "red");
+                })
+            });
+        </script>
+        <style type="text/css">
+            #kotak1,#kotak2,#kotak3,#kotak4 {
+                width : 70px;
+                height : 70px;
+                background: yellow;
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>klik 2x pada setiap kotak untuk mengubah warnanya</h2>
+        <div style="display: flex;">
+            <div id="kotak1"></div>
+            <div id="kotak2"></div>
+            <div id="kotak3"></div>
+            <div id="kotak4"></div>
+        </div>
+    </body>
+</html>
